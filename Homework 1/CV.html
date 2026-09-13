@@ -1,119 +1,237 @@
 <!DOCTYPE html>
-<!-- xác định ngôn ngữ cho file html -->
 <html lang="en">
 <head>
-  <!-- khai báo với trình duyệt trang web sử dụng bộ mã ký tự UTF-8 -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- thẻ title dùng để đặt tên website hiển thị trên tab của trình duyệt -->
-  <title>Tran Thanh The - CV - CSBU103 week2</title>
-  <!-- liên kết với css để định dạng giao diện -->
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Tran Thanh The</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #2b2b2b;
+            background-color: #ffffff;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #111111;
+            margin-bottom: 4px;
+        }
+
+        .subtitle {
+            font-size: 1.15rem;
+            color: #666666;
+            margin-bottom: 24px;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid #e5e5e5;
+            margin: 25px 0 35px 0;
+        }
+
+        /* Section Headings */
+        .section-title {
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #555555;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        /* Item blocks */
+        .item {
+            margin-bottom: 24px;
+        }
+
+        .item-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #111111;
+            margin-bottom: 4px;
+        }
+
+        .item-meta {
+            font-size: 0.95rem;
+            color: #666666;
+            margin-bottom: 8px;
+        }
+
+        .item-desc {
+            font-size: 0.95rem;
+            color: #333333;
+            line-height: 1.5;
+        }
+
+        /* Skills & Lists */
+        .skills-section {
+            margin-top: 35px;
+        }
+
+        .category-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #111111;
+            margin-top: 25px;
+            margin-bottom: 8px;
+        }
+
+        .category-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .category-list li {
+            font-size: 0.95rem;
+            color: #444444;
+            padding: 2px 0;
+        }
+
+        .category-divider {
+            border: none;
+            border-top: 1px solid #eeeeee;
+            margin-top: 18px;
+        }
+
+        /* Links */
+        .social-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .social-links li {
+            padding: 3px 0;
+        }
+
+        .social-links a {
+            color: #0969da;
+            text-decoration: underline;
+            font-size: 0.95rem;
+            word-break: break-all;
+        }
+
+        .social-links a:hover {
+            color: #054da7;
+        }
+    </style>
 </head>
 <body>
-  <div class="cv-container">
-   <!-- Tạo Header với thẻ h để  giới thiệu tên và vị trí -->
-    <header> 
-      <h1>Tran Thanh The</h1>
-      <h2>Software Engineer</h2>
-    </header>
 
-    <!-- thẻ main dùng để xác định phần thân của website, chứa nội dung quan trọng -->
-    <main>
-      <section class="left"> <!-- thẻ section dùng để chia trang thành những phần nội dung độc lập, ở đây là chia cột trái: kinh nghiệm làm việc, trình độ học vấn -->
-        <h3>EXPERIENCE</h3>
-        <div class="experience-item"> <!-- thẻ div để chứa các phần tử, đặt class cho thẻ để style theo nhóm-->
-          <h4>Software Engineer</h4>
-          <!-- thẻ p dùng để thể hiện một đoạn văn bảng, đặt class cho thẻ để style theo nhóm -->
-          <p class="company">ABC</p> 
-          <p class="time">Jan 2023 - Present · Ho Chi Minh City</p>
-          <p>Developed scalable web applications using React, Node.js, and TypeScript. Collaborated with cross-functional teams to deliver performant and maintainable software solutions.</p>
-        </div>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Tran Thanh The</h1>
+            <div class="subtitle">Software Engineer</div>
+            <hr class="divider">
+        </header>
 
-        <div class="experience-item">
-          <h4>Junior Software Engineer</h4>
-          <p class="company">AAA</p>
-          <p class="time">Jul 2020 - Dec 2022 · Ho Chi Minh City</p>
-          <p>Maintained and enhanced existing features of enterprise web systems. Implemented REST APIs and improved data visualization modules.</p>
-        </div>
+        <!-- Experience -->
+        <section>
+            <div class="section-title">EXPERIENCE</div>
 
-        <div class="experience-item">
-          <h4>Intern Web Developer</h4>
-          <p class="company">Startup ABC</p>
-          <p class="time">Mar 2020 - Jun 2020 · Ho Chi Minh City</p>
-          <p>Assisted in building responsive web interfaces using HTML, CSS, and JavaScript. Supported QA testing and deployment to staging servers.</p>
-        </div>
+            <div class="item">
+                <div class="item-title">Software Engineer</div>
+                <div class="item-meta">ABC<br>Jan 2023 - Present · Ho Chi Minh City</div>
+                <p class="item-desc">
+                    Developed scalable web applications using React, Node.js, and TypeScript. Collaborated with cross-functional teams to deliver performant and maintainable software solutions.
+                </p>
+            </div>
 
-        <h3>EDUCATION</h3>
-        <div class="education-item">
-          <h4>Bachelor of Science in Computer Science</h4>
-          <p>University of Information Technology</p>
-          <p class="time">2016 - 2020 · Ho Chi Minh City</p>
-        </div>
-      </section>
-        <!-- thẻ aside dùng để định nghĩa một phần nội dung có liên quan đến nội dung chính, thường được thể hiện dưới dạng sidebar, như ở đây là cột phải giới thiệu thông tin cá nhân, kỹ năng chuyên môn -->
-      <aside class="right">
-        <!-- thẻ img dùng để trình bày hình ảnh, src để dẫn nguồn ảnh, alt là mô tả hình ảnh -->
-        <img src="Avatar.jpg" alt="Profile Photo" class="avatar">
-        <!-- thẻ ul để trình bày một list các thông tin không cần theo thứ tự -->
-        <ul class="contact">
-          <!-- thẻ li dùng để xác định một danh sách không theo thứ tự, không theo thứ tự, thư mục hoặc menu -->
-           <li> Student number: 24560032</li>
-          <li>thanhthe3101@gmail.com</li>
-          <li>+84 858 689 228   </li>
-          <li>Ho Chi Minh City, Vietnam</li>
-        </ul>
+            <div class="item">
+                <div class="item-title">Junior Software Engineer</div>
+                <div class="item-meta">AAA<br>Jul 2020 - Dec 2022 · Ho Chi Minh City</div>
+                <p class="item-desc">
+                    Maintained and enhanced existing features of enterprise web systems. Implemented REST APIs and improved data visualization modules.
+                </p>
+            </div>
 
-        <div class="info-block">
-          <h4>Technical Skills</h4>
-          <ul>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>RESTful APIs</li>
-            <li>SQL</li>
-            <li>GitHub</li>
-          </ul>
-        </div>
+            <div class="item">
+                <div class="item-title">Intern Web Developer</div>
+                <div class="item-meta">Startup ABC<br>Mar 2020 - Jun 2020 · Ho Chi Minh City</div>
+                <p class="item-desc">
+                    Assisted in building responsive web interfaces using HTML, CSS, and JavaScript. Supported QA testing and deployment to staging servers.
+                </p>
+            </div>
+        </section>
 
-        <div class="info-block">
-          <h4>Tools & Technologies</h4>
-          <ul>
-            <li>VS Code</li>
-            <li>Docker</li>
-            <li>Figma</li>
-          </ul>
-        </div>
+        <!-- Education -->
+        <section>
+            <div class="section-title">EDUCATION</div>
 
-        <div class="info-block">
-          <h4>Soft Skills</h4>
-          <ul>
-            <li>Problem Solving</li>
-            <li>Team Collaboration</li>
-            <li>Agile Development</li>
-            <li>Continuous Learning</li>
-          </ul>
-        </div>
+            <div class="item">
+                <div class="item-title">Bachelor of Science in Computer Science</div>
+                <div class="item-meta">University of Information Technology</div>
+                <div class="item-meta">2016 - 2020 · Ho Chi Minh City</div>
+            </div>
+        </section>
 
-        <div class="info-block">
-          <h4>Languages</h4>
-          <ul>
-            <li>Vietnamese (native)</li>
-            <li>English</li>
-          </ul>
-        </div>
+        <!-- Skills & Additional Info -->
+        <section class="skills-section">
+            <div class="category-title">Technical Skills</div>
+            <ul class="category-list">
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>RESTful APIs</li>
+                <li>SQL</li>
+                <li>GitHub</li>
+            </ul>
+            <hr class="category-divider">
 
-        <div class="info-block">
-          <h4>Social</h4>
-          <ul>
-            <!-- thẻ a dùng để link đến các đường dẫn mong muốn  -->
-            <li><a href="https://www.google.com"> github.com/thanhthe </a></li>
-            <li><a href="https://www.google.com"> linkedin.com/in/thanhthe </a></li>
-            <li><a href="https://www.google.com"> myportfolio.com </a></li>
-          </ul>
-        </div>
-      </aside>
-    </main>
-  </div>
+            <div class="category-title">Tools & Technologies</div>
+            <ul class="category-list">
+                <li>VS Code</li>
+                <li>Docker</li>
+                <li>Figma</li>
+            </ul>
+            <hr class="category-divider">
+
+            <div class="category-title">Soft Skills</div>
+            <ul class="category-list">
+                <li>Problem Solving</li>
+                <li>Team Collaboration</li>
+                <li>Agile Development</li>
+                <li>Continuous Learning</li>
+            </ul>
+            <hr class="category-divider">
+
+            <div class="category-title">Languages</div>
+            <ul class="category-list">
+                <li>Vietnamese (native)</li>
+                <li>English</li>
+            </ul>
+            <hr class="category-divider">
+
+            <div class="category-title">Social</div>
+            <ul class="social-links">
+                <li><a href="https://github.com/thanhthe" target="_blank" rel="noopener noreferrer">github.com/thanhthe</a></li>
+                <li><a href="https://linkedin.com/in/thanhthe" target="_blank" rel="noopener noreferrer">linkedin.com/in/thanhthe</a></li>
+                <li><a href="https://myportfolio.com" target="_blank" rel="noopener noreferrer">myportfolio.com</a></li>
+            </ul>
+        </section>
+    </div>
+
 </body>
 </html>
